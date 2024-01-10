@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Site</title>
+    <!-- Add your CSS stylesheets or include external stylesheets here -->
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>News Site</h1>
+    <!-- Add navigation links or other header content as needed -->
+</header>
+
+<!-- Featured News Section -->
+<section>
+    <ul>
+        {% for news_item in news_list_ht %}
+            <li><h2> {{ news_item.title }}</h2>  {{ news_item.content }}</li>
+        {% endfor %}
+    </ul>
+{#    {%  for i in news_list_ht %}#}
+{#        <article>#}
+{#        <h3>Breaking News: [Title]</h3>#}
+{#        <p>[Brief description of the breaking news.]</p>#}
+{#        <!-- Add a link to the full article if applicable -->#}
+{#        <a href="news_django_page_ht">{{ i.item.title }} Read More</a>#}
+{#        </article>#}
+{#    {% endfor %}#}
+{#    <h2>Featured News</h2>#}
+    
+    <!-- Add more featured articles as needed -->
+</section>
+
+<!-- Recent News Section -->
+{#<section>#}
+{#    <h2>Recent News</h2>#}
+{#    <ul>#}
+{#        <li>#}
+{#            <h3>[News Article Title]</h3>#}
+{#            <p>[Brief description of the news article.]</p>#}
+{#            <!-- Add a link to the full article if applicable -->#}
+{#            <a href="#">Read More</a>#}
+{#        </li>#}
+{#        <!-- Add more recent articles as needed -->#}
+{#    </ul>#}
+{#</section>#}
+
+</body>
+</html>
