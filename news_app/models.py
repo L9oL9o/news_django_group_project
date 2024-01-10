@@ -7,3 +7,6 @@ class News(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 
+class Detail_news(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()

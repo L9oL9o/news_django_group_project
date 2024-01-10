@@ -1,5 +1,6 @@
+from django.http import HttpResponse
 from django.shortcuts import render
-from .models import News
+from .models import News, Detail_news
 
 def news_view (request):
     news_list = News.objects.all()
@@ -10,6 +11,6 @@ def news_view (request):
 
 
 def main_page(request):
-    context = {'news_list_ht': news_list}
-
-    return render(request, 'news_django.html')
+    detail_news = Detail_news.objects.all()
+    context = {'news_detail_page_ht': detail_news}
+    return render(request, 'detail_part.html', context)
