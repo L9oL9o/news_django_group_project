@@ -13,16 +13,17 @@
     <h1>News Site</h1>
     <!-- Add navigation links or other header content as needed -->
 </header>
-
+<h1><a href="real/news/", style="color: darkred">If you want to see real news click here</a></h1>
 <!-- Featured News Section -->
 <section>
     <ul>
         {% for news_item in news_list_ht %}
             <li><h2> {{ news_item.title }}</h2>  {{ news_item.content }}</li>
-            <a href="news_detail_page_ht"> See more detail news </a>
+            <a href="detail-news-page"> See more detail news </a>
         {% endfor %}
     </ul>
-{#    {%  for i in news_list_ht %}#}
+
+    {#    {%  for i in news_list_ht %}#}
 {#        <article>#}
 {#        <h3>Breaking News: [Title]</h3>#}
 {#        <p>[Brief description of the breaking news.]</p>#}

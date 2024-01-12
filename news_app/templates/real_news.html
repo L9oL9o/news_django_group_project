@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {% for item in real_news %}
+        <li><h2>{{ item.title }}</h2> {{ item.content }}</li>
+        <a href="{{ item.url }}">To see full info</a>
+    {% endfor %}
+    <a href="main-news-page"><h1 style="color: red"> Back to main list</h1></a>
+</ul>
+</body>
+</html>

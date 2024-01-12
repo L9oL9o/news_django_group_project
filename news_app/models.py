@@ -1,12 +1,17 @@
-from django.db import models
-
-class News(models.Model):
-    title = models.CharField(max_length=100)
-    content = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+from django.db.models import Model, CharField, TextField, URLField
 
 
-class Detail_news(models.Model):
-    title = models.CharField(max_length=100)
-    content = models.TextField()
+class News(Model):
+    title = CharField(max_length=100)
+    content = TextField()
+
+
+class Detail_news(Model):
+    title = CharField(max_length=100)
+    content = TextField()
+
+
+class From_real_news(Model):
+    title = CharField(max_length=100)
+    content = TextField()
+    url = URLField(default="default")
