@@ -1,4 +1,4 @@
-from django.db.models import Model, CharField, TextField, URLField
+from django.db.models import Model, CharField, TextField, URLField, ImageField
 
 
 class News(Model):
@@ -15,3 +15,4 @@ class From_real_news(Model):
     title = CharField(max_length=100)
     content = TextField()
     url = URLField(default="default")
+    img = URLField(default="")

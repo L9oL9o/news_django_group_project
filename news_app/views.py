@@ -8,7 +8,7 @@ def main_news_page_view(request):
     context = {'news_list_ht': news_list}
     # return render(request, 'html/index.html', context)
     # return render(request, 'main.html', context)
-    return render(request, 'main.html', context)
+    return render(request, 'html/news.html', context)
 
 
 def detail_news_page(request):

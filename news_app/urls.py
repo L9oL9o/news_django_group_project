@@ -1,4 +1,3 @@
-from django.contrib import admin
 from django.urls import path
 
 from news_app.views import *
@@ -22,3 +21,6 @@ urlpatterns = [
     path("real-news", from_real_news_view, name="real-news-page-ht")
 
 ]
+
+# if settings.DEBUG:
+#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

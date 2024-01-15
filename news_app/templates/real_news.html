@@ -9,6 +9,7 @@
     {% for item in real_news %}
         <li><h2>{{ item.title }}</h2> {{ item.content }}</li>
         <a href="{{ item.url }}">To see full info</a>
+        <img src="{{ item.img }}" alt="the new img">
     {% endfor %}
     <a href="main-news-page"><h1 style="color: red"> Back to main list</h1></a>
 </ul>
